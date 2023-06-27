@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900&family=Rampart+One&display=swap');
+
+.big-container {
+    background-color: #FFE9A0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-gap: 1em;
+    grid-template-rows: auto 1fr auto;
+    font-family: 'Catamaran', sans-serif;
+}
+
+.navbar {
+    width: 100%;
+    background-color: #8b0002;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    color: #367E18;
+}
+
+.logo {
+    font-size: 3em;
+    margin: 0 0 0 1em;
+}
+
+.site-header {
+    font-family: 'Rampart One', cursive;
+    font-size: 2em;
+    padding-left: 4em;
+}
+
+.user-container {
+    margin: 0 1em 0 0;
+}
+
+.container {
+    background-color: #FFE9A0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1em;
+}
+
+.main-image {
+    padding-top: 5em;
+}
+
+#reviews {
+    color: #367E18;
+}
+
+#review-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #367E18;
+    margin-top: .5em;
+    margin-bottom: .5em;
+}
+
+#btn {
+    padding: .5em;
+    background-color: #8b0002;
+    border: none;
+    border-radius: 10%;
+    color: #367E18;
+}
+
+#btn2 {
+    padding: .5em;
+    background-color: #8b0002;
+    border: none;
+    border-radius: 10%;
+    color: #367E18;
+    display: none;
+}
+
+#btn3 {
+    padding: .5em;
+    background-color: #8b0002;
+    border: none;
+    border-radius: 10%;
+    color: #367E18;
+    display: none;
+}
+
+.countries {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 .5em 0 .5em;
+    text-align: center;
+    color: #367E18;
+}
+
+.countryImage {
+    height: 15em;
+    width: 15em;
+    object-fit: cover;
+    border-radius: 20%;
+}
+
+.break {
+    height: .2em;
+    width: 90%;
+    background-color: #367E18;
+    margin-top: 1em;
+}
+
+.footer {
+    width: 100%;
+    height: 10vh;
+    background-color: #8b0002;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    color: #367E18;
+}
+
+/* reposnive */
+
+@media (max-width: 1000px) {
+    .big-container {
+        grid-template-rows: 1fr;
+        height: 100%;
+    }
+
+    .container {
+        height: 100%;
+    }
+
+    .countries {
+        flex-wrap: none;
+        flex-direction: column;
+    }
+
+    .main-image {
+        padding-top: 2em;
+    }
+
+    .main-image img {
+        width: 30rem;
+    }
+
+    .countries .card .countryImage {
+        width: 15rem;
+        height: 15rem;
+    }
+
+    #review-card {
+        text-align: center;
+        padding: 0 1em 0 1em;
+    }
+}
+
+@media (max-width: 765px) {
+    .navbar {
+        flex-direction: column;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+        height: 15vh;
+    }
+
+    .logo,
+    .site-header,
+    .user-container {
+        padding: 0;
+        margin: 0;
+    }
+
+    .logo {
+        font-size: 2em;
+    }
+
+    .site-header {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 600px) {
+    .main-image img {
+        width: 25rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .main-image img {
+        width: 20rem;
+    }
+
+    .countries .card .countryImage {
+        width: 10rem;
+        height: 10rem;
+    }
+}
